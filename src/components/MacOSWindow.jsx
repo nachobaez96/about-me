@@ -1,20 +1,20 @@
 import React from 'react';
 import './styles.css';
-import Typewriter from './Typewriter';
+import ParagraphSequence from './ParagraphSequence';
 
-const MacOSWindow = ({ title }) => {
+const MacOSWindow = () => {
   return (
     <div className="macos-window">
       <div className="macos-titlebar">
         <div className="macos-buttons">
-          <span className="macos-button macos-button-close"></span>
-          <span className="macos-button macos-button-minimize"></span>
-          <span className="macos-button macos-button-fullscreen"></span>
+          <div className="macos-button macos-button-close"></div>
+          <div className="macos-button macos-button-minimize"></div>
+          <div className="macos-button macos-button-fullscreen"></div>
         </div>
-        <span className="macos-title">{title}</span>
+        <div className="macos-title">About Me</div>
       </div>
       <div className="macos-content">
-        <Typewriter text="This is a cute MacOS terminal" />
+        <ParagraphSequence />
       </div>
     </div>
   );

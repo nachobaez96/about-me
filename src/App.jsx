@@ -12,7 +12,7 @@ const App = () => {
     <div>
       <Navbar />
       <Hero />
-      <MacOSWindow title="Terminal" />
+      <MacOSWindow />
       <Projects />
       <Contact />
       <Footer />
