@@ -5,7 +5,7 @@ import './styles.css';
 const Hero = () => {
   return (
     <div id="hero" className="hero">
-      <Typewriter text="Welcome! Align to the left" />
+      <Typewriter text="Hi! I'm Nacho Báez" />
     </div>
   );
 };
