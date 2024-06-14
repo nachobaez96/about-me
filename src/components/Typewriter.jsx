@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css';
 
-const Typewriter = ({ text, speed = 85, showBlinkingBlock = true, onComplete }) => {
+const Typewriter = ({ text, speed = 80, showBlinkingBlock = true, onComplete }) => {
   const [displayText, setDisplayText] = useState('');
   const [showBlock, setShowBlock] = useState(true);
 
