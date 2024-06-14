@@ -68,7 +68,7 @@ body {
   font-weight: 900;
   border-radius: 8px;
   overflow: hidden;
-  width: 700px;
+  width: 710px;
   height: 450px;
   border: 1px solid #2b2b3e;
   display: flex;
@@ -110,6 +110,23 @@ body {
   background-color: #28c840;
 }
 
+.skip-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 5px 10px;
+  background-color: #7a82c2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.skip-button:hover {
+  background-color: #656cae;
+}
+
 .macos-title {
   position: absolute;
   left: 50%;
@@ -119,12 +136,111 @@ body {
 }
 
 .macos-content {
+  position: relative;
   flex-grow: 1;
-  padding: 20px;
+  padding: 12px 20px 6px;
+  /* padding: 12px 0px 30px 20px; */
   overflow-y: auto;
+  line-height: 1.47;
 }
-
 
 .blinking-block-hidden {
   visibility: hidden;
+}
+
+.project-card {
+  background-color: #222433;
+  color: #7a82c2;
+  font-family: 'Inconsolata', monospace;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 60px rgba(0, 0, 0, 0.6);
+}
+
+.project-titlebar {
+  display: flex;
+  align-items: center;
+  background-color: #1f1f24;
+  padding: 5px 10px;
+  border-bottom: 1px solid #2b2b3e;
+  position: relative;
+}
+
+.project-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.project-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.project-button-close {
+  background-color: #ff5f57;
+}
+
+.project-button-minimize {
+  background-color: #ffbd2e;
+}
+
+.project-button-fullscreen {
+  background-color: #28c840;
+}
+
+.project-title {
+  margin-left: auto;
+  margin-right: auto;
+  color: #d4d4d4;
+  font-size: 12px;
+}
+
+.project-content {
+  padding: 15px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  filter: grayscale(80%);
+  transition: filter 0.3s;
+}
+
+.project-image:hover {
+  filter: grayscale(0%);
+}
+
+.project-description {
+  margin-top: 10px;
+  color: #d4d4d4;
+  font-size: 14px;
+}
+
+.projects-section {
+  padding: 40px 20px;
+}
+
+.projects-section h2 {
+  font-family: 'Inconsolata', monospace;
+  color: #222433;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
