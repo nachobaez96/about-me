@@ -5,9 +5,10 @@ import './styles.css';
 const Projects = () => {
   const projectData = [
     {
-      title: 'Project',
-      description: 'This section is under construction',
-      imageUrl: 'image.jpg'
+      barTitle: 'Game',
+      title: 'Project V',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe',
+      imageUrl: './project-v.png'
     },
   ];
 
@@ -18,6 +19,7 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <Project
             key={index}
+            barTitle={project.barTitle}
             title={project.title}
             description={project.description}
             imageUrl={project.imageUrl}

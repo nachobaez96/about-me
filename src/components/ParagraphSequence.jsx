@@ -5,7 +5,7 @@ import './styles.css';
 const ParagraphSequence = () => {
   const paragraphs = [
     `// I am a web developer from Madrid, Spain.`,
-    `// My passion is creating functionally harmonious software.`,
+    `// My passion is creating functionally seamless web apps.`,
     ".",
     // `nachobaez96 = {\n\tcontactInfo: ['nachobaez96@gmail.com', 'github/nachobaez96'],\n\tskillSet: ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB w/ Mongoose'],\n\tinterests: ['composition', 'digital signal processing', 'tennis']\n}`,
     `nacho.contactInfo = ['nachobaez96@gmail.com', 'github/nachobaez96']`,
