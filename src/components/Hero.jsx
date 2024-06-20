@@ -5,7 +5,7 @@ import './styles.css';
 const Hero = () => {
   return (
     <div id="hero" className="hero">
-      <span className="hero-text"><Typewriter text="Hi! I'm Nacho Báez" /></span>
+      <span className={`hero-text wave-hover`}><Typewriter text="Hi! I'm Nacho Báez" /></span>
     </div>
   );
 };

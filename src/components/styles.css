@@ -147,6 +147,8 @@ body {
   line-height: 1.47;
 }
 
+/* margin-bottom: '20px'; */
+
 .blinking-block-hidden {
   visibility: hidden;
 }
@@ -157,7 +159,7 @@ body {
   overflow-x: hidden;
 }
 
-.projects-section .wave-hover {
+.projects-section {
   font-family: 'Inconsolata', monospace;
   color: #222433;
   text-align: center;
@@ -171,7 +173,7 @@ body {
 }
 
 .contact {
-  padding: 70px;
+  padding: 75px;
   padding-top: 0px;
   text-align: center;
 }
@@ -228,7 +230,7 @@ body {
   color: #dbdbde; /* #dbdbde */
 }
 
-/* @keyframes wave {
+@keyframes wave {
   0%, 100% {
     background-position: 0% 0%;
   }
@@ -237,16 +239,30 @@ body {
   }
 }
 
-.wave-hover {
+@keyframes wave-stay {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.wave-hover, .wave-hover-stay {
   display: inline-block;
-  background: linear-gradient(135deg, transparent 50%, #7a82c2 50%);
+  background: linear-gradient(135deg, #000000 50%, #7a82c2 50%);
   background-size: 200% 200%;
   color: inherit;
   transition: color 0.3s;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .wave-hover:hover {
-  animation: wave 1s forwards;
-} */
+  animation: wave 0.75s forwards;
+}
+
+.wave-hover-stay:hover {
+  animation: wave-stay 0.35s forwards;
+}

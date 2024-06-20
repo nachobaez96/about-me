@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from './Typewriter';
 import './styles.css';
+import paragraphData from './paragraphData';
 
 const ParagraphSequence = () => {
   const paragraphs = [
@@ -93,7 +94,7 @@ const ParagraphSequence = () => {
 
   const handleComplete = () => {
     if (currentParagraph == 2 || currentParagraph == 6) {
-        setCurrentParagraph(prev => prev + 1);
+      setCurrentParagraph(prev => prev + 1);
     }
     else if (currentParagraph < paragraphs.length - 1) {
       setTimeout(() => {
@@ -113,12 +114,19 @@ const ParagraphSequence = () => {
       {showSkipButton && (
         <button className="skip-button" onClick={handleSkip}>Skip</button>
       )}
-      {paragraphs.map((paragraph, index) => (
-        <div key={index} style={{ marginBottom: '20px' }}>
-          {index <= currentParagraph && (
-            skip ? (
-              <span>{paragraph.text}</span>
-            ) : (
+      {skip ? (
+        <>
+          {paragraphData.map((part, index) => {
+            const Tag = part.tag;
+            return (
+              <Tag key={index} className={part.className} style={{ marginBottom: '20px' }}>{part.text}</Tag>
+            );
+          })}
+        </>
+      ) : (
+        paragraphs.map((paragraph, index) => (
+          <div key={index} style={{ marginBottom: '20px' }}>
+            {index <= currentParagraph && (
               <Typewriter
                 text={paragraph.text}
                 speed={40}
@@ -126,10 +134,10 @@ const ParagraphSequence = () => {
                 onComplete={index === currentParagraph ? handleComplete : null}
                 styleRules={paragraph.styleRules}
               />
-            )
-          )}
-        </div>
-      ))}
+            )}
+          </div>
+        ))
+      )}
     </div>
   );
 };
