@@ -13,12 +13,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul>
-        <li>
+        <li className='wave-hover-stay'>
           <a href="#projects" onClick={(event) => handleScroll(event, 'projects')}>
             Projects
           </a>
         </li>
-        <li>
+        <li className='wave-hover-stay'>
           <a href="#contact" onClick={(event) => handleScroll(event, 'contact')}>
             Contact
           </a>
