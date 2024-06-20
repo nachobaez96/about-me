@@ -41,7 +41,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="projects-section">
-      <h2>Projects</h2>
+      <h2 className="wave-hover">Projects</h2>
       <div className="projects">
         {projectData.map((project, index) => (
           <Project
