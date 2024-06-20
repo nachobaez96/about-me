@@ -33,7 +33,7 @@ const Project = ({ barTitle, title, description, imageUrl }) => {
           <div className="project-button project-button-minimize"></div>
           <div className="project-button project-button-fullscreen"></div>
         </div>
-        <div className="project-title">{barTitle}</div>
+        <div className="project-bartitle">{barTitle}</div>
       </div>
       <div className="project-content">
         <img src={imageUrl} alt={title} className="project-image" />

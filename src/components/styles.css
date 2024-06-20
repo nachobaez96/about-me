@@ -58,6 +58,8 @@ body {
   background-color: #222433;
   color: #f4f4f9;
   padding: 20px;
+  font-size: 16px;
+  font-weight: 550;
 }
 
 .macos-window {
@@ -137,6 +139,7 @@ body {
 }
 
 .macos-content {
+  color: #bdbdbf;
   position: relative;
   flex-grow: 1;
   padding: 12px 20px 6px;
@@ -149,15 +152,16 @@ body {
 }
 
 .projects-section {
-  padding: 40px 20px;
+  padding: 60px 20px;
+  padding-bottom: 0px;
   overflow-x: hidden;
 }
 
-.projects-section h2 {
+.projects-section .wave-hover {
   font-family: 'Inconsolata', monospace;
   color: #222433;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .projects {
@@ -165,3 +169,84 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.contact {
+  padding: 70px;
+  padding-top: 0px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-family: 'Inconsolata', monospace;
+  color: #222433;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+}
+
+.contact-details a {
+  color: #7a82c2;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-details a:hover {
+  color: #656cae;
+}
+
+.comment {
+  color: #5e9955; /* #258f25 */
+}
+
+.equal {
+  color: white;
+}
+
+.comma {
+  color: white;
+}
+
+.bracket {
+  color: #ffd700; /* #ff00ff */
+}
+
+/* variable #4fc1ff  key #9cdce9 */
+
+.string {
+  color: #cb886e; /* #e26450*/
+}
+
+.text {
+  color: #dbdbde; /* #dbdbde */
+}
+
+/* @keyframes wave {
+  0%, 100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+}
+
+.wave-hover {
+  display: inline-block;
+  background: linear-gradient(135deg, transparent 50%, #7a82c2 50%);
+  background-size: 200% 200%;
+  color: inherit;
+  transition: color 0.3s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wave-hover:hover {
+  animation: wave 1s forwards;
+} */
