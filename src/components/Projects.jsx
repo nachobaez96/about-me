@@ -8,16 +8,6 @@ import './styles.css';
 const Projects = () => {
   const projectData = [
     {
-      barTitle: 'Digital Signal Processing',
-      title: 'Eletrical Infetterence',
-      description: (
-        <span>
-          <em>Eletrical Infetterence</em> is an Elementary-powered VST audio plug-in that works on your DAW. It mimics amp power going out and back, and is loaded with different modes and rhythmic features.
-        </span>
-      ),
-      imageUrl: './placeholder.png'
-    },
-    {
       barTitle: 'Game',
       title: 'Project V',
       description: 'Ball Game is a local multiplayer, voleyball inspired game developed with the Phaser engine. It has fast paced gameplay, and a set of powerups to spice things up!', // WIP online multiplayer
@@ -31,6 +21,16 @@ const Projects = () => {
       imageUrl: './drummachine.gif'
     },
     {
+      barTitle: 'Digital Signal Processing',
+      title: 'Eletrical Infetterence',
+      description: (
+        <span>
+          <em>Eletrical Infetterence</em> is a WIP Elementary-powered VST audio plug-in that runs on your DAW. Its based on SRVB and currently serves as a glorified tremolo effect. Coming next are different modes and rhythmic features expanding on the idea of amp power going out and back.
+        </span>
+      ),
+      imageUrl: './eletrical.gif'
+    },
+    {
       barTitle: 'Web App',
       title: 'My Showcase Site',
       description: "The webpage you're witnessing right now. A simple but hopefully visually pleasing display of my React capabilities so far - it also has a back end!",
@@ -39,8 +39,8 @@ const Projects = () => {
     {
       barTitle: 'More on GitHub!',
       title: 'Smaller projects and backend challenges',
-      description: "I'm always working on something! My GitHub profile is constantly getting updates, and it isn't hard for me to find new projects to dive into.",
-      imageUrl: './placeholder.png'
+      description: "I'm always working on something! My GitHub profile is updated daily, and it isn't hard for me to find new projects to dive into.",
+      imageUrl: './github.gif'
     },
   ];
 
