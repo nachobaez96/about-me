@@ -114,16 +114,7 @@ const ParagraphSequence = () => {
       {showSkipButton && (
         <button className="skip-button" onClick={handleSkip}>Skip</button>
       )}
-      {skip ? (
-        <>
-          {paragraphData.map((part, index) => {
-            const Tag = part.tag;
-            return (
-              <Tag key={index} className={part.className} style={{ marginBottom: '20px' }}>{part.text}</Tag>
-            );
-          })}
-        </>
-      ) : (
+      {skip ? paragraphData : (
         paragraphs.map((paragraph, index) => (
           <div key={index} style={{ marginBottom: '20px' }}>
             {index <= currentParagraph && (
