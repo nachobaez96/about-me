@@ -39,7 +39,7 @@ const Projects = () => {
     {
       barTitle: 'More on GitHub!',
       title: 'Smaller projects and backend challenges',
-      description: "I'm always working on something! My GitHub profile is updated daily, and it isn't hard for me to find new projects to dive into.",
+      description: "I'm always working on something! My repos are updated daily, and it isn't hard for me to find new projects to dive into.",
       imageUrl: './github.gif'
     },
   ];
