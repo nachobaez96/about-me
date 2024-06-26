@@ -25,7 +25,7 @@ const Projects = () => {
       title: 'Eletrical Infetterence',
       description: (
         <span>
-          <em>Eletrical Infetterence</em> is a WIP Elementary-powered VST audio plug-in that runs on your DAW. Its based on SRVB and currently serves as a glorified tremolo effect. Coming next are different modes and rhythmic features expanding on the idea of amp power going out and back.
+          <em>Eletrical Infetterence</em> is a WIP Elementary-powered VST audio plug-in that runs on your DAW. It's based on SRVB and currently serves as a glorified tremolo effect. Coming next are different modes and rhythmic features expanding on the idea of amp power going out and back.
         </span>
       ),
       imageUrl: './eletrical.gif'
@@ -33,7 +33,7 @@ const Projects = () => {
     {
       barTitle: 'Web App',
       title: 'My Showcase Site',
-      description: "The webpage you're witnessing right now. A simple but hopefully visually pleasing display of my React capabilities so far - it also has a back end!",
+      description: "The webpage you're witnessing right now. A simple but hopefully visually pleasing display of my React capabilities so far - it also has a back end! (mentira)", // responsive
       imageUrl: './portfolio.gif'
     },
     {
