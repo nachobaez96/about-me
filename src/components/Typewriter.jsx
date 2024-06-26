@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './styles.css';
 
-const Typewriter = ({ text, speed = 80, showBlinkingBlock = true, onComplete, styleRules = [] }) => {
+const Typewriter = ({ text, speed = 80, showBlinkingBlock = true, onComplete }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showBlock, setShowBlock] = useState(true);
@@ -9,8 +8,12 @@ const Typewriter = ({ text, speed = 80, showBlinkingBlock = true, onComplete, st
   useEffect(() => {
     const interval = setInterval(() => {
       if (currentIndex < text.length) {
-        setDisplayedText((prev) => prev + text[currentIndex]);
-        setCurrentIndex((prev) => prev + 1);
+        let nextIndex = currentIndex + 1;
+        if (text[currentIndex] === '<') {
+          nextIndex = text.indexOf('>', currentIndex) + 1;
+        }
+        setDisplayedText(text.substring(0, nextIndex));
+        setCurrentIndex(nextIndex);
       } else {
         clearInterval(interval);
         if (onComplete) {
@@ -27,28 +30,9 @@ const Typewriter = ({ text, speed = 80, showBlinkingBlock = true, onComplete, st
     return () => clearInterval(interval);
   }, [currentIndex, text, speed, showBlinkingBlock, onComplete]);
 
-  const getStyledText = () => {
-    const styledText = displayedText.split('').map((char, index) => {
-      let styleClass = '';
-      for (let rule of styleRules) {
-        if (index >= rule.start && index < rule.end) {
-          styleClass = rule.className;
-          break;
-        }
-      }
-      return (
-        <span key={index} className={styleClass}>
-          {char}
-        </span>
-      );
-    });
-
-    return styledText;
-  };
-
   return (
     <span>
-      {getStyledText()}
+      <span dangerouslySetInnerHTML={{ __html: displayedText }} />
       {showBlinkingBlock && <span className={showBlock ? "blinking-block" : "blinking-block-hidden"}>█</span>}
     </span>
   );

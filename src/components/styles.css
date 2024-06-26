@@ -314,7 +314,7 @@ body {
     padding: 10px;
     /* font-size: 14px; */
     /* font-weight: 900; */
-    /* padding-bottom: 0px; */
+    padding-bottom: 0px;
   }
 
   .skip-button {
@@ -352,7 +352,7 @@ body {
 
   .macos-content {
     padding: 12px;
-    /* padding-bottom: 0px; */
+    padding-bottom: 0px;
   }
 
   .skip-button {
@@ -385,7 +385,7 @@ body {
 
   .macos-content {
     padding: 15px;
-    /* padding-bottom: 0px; */
+    padding-bottom: 0px;
   }
 
   .skip-button {
