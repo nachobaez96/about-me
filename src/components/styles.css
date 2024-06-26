@@ -275,6 +275,14 @@ body {
 
 /* Mobile */
 @media (max-width: 600px) {
+  .skip-button {
+    position: relative;
+    float: right; /* Float to the right */
+    margin-left: 15px; /* Separate from the content */
+    margin-top: -10px; /* Adjust top margin to move the button down */
+    margin-right: -10px; /* Adjust right margin to move the button left */
+  }
+  
   .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
