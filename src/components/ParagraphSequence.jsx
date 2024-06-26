@@ -6,77 +6,32 @@ import paragraphData from './paragraphData';
 const ParagraphSequence = () => {
   const paragraphs = [
     {
-      text: `// I am a web developer from Madrid, Spain.`,
-      styleRules: [{ start: 0, end: 43, className: 'comment' }]
+      text: `<span class="comment" style="margin-bottom: 20px;">// I am a web developer from Madrid, Spain.</span>`,
     },
     {
-      text: `// My passion is creating functionally seamless web apps.`,
-      styleRules: [{ start: 0, end: 57, className: 'comment' }]
+      text: `<span class="comment" style="margin-bottom: 20px;">// My passion is creating functionally seamless web apps.</span>`,
     },
     {
-      text: "‎", // invisible symbol
-      styleRules: []
+      text: `<span style="margin-bottom: 20px;">‎</span>`,
     },
     {
-      text: `nacho.contactInfo = ['nachobaez96@gmail.com', 'github/nachobaez96']`,
-      styleRules: [
-        { start: 0, end: 17, className: 'text' }, // nacho.contactInfo
-        { start: 18, end: 19, className: 'equal' }, // =
-        { start: 20, end: 21, className: 'bracket' }, // [
-        { start: 21, end: 44, className: 'string' }, // 'nachobaez96@gmail.com'
-        { start: 44, end: 45, className: 'comma' }, // ,
-        { start: 45, end: 66, className: 'string' }, // 'github/nachobaez96'
-        { start: 66, end: 67, className: 'bracket' } // ]
-      ]
+      text: `<span class="text" style="margin-bottom: 20px;">nacho.contactInfo<span class="equal"> = </span><span class="bracket">[</span><span class="string">'nachobaez96@gmail.com'<span class="comma">, </span>'github/nachobaez96'</span><span class="bracket">]</span></span>`,
     },
     {
-      text: `nacho.skillSet = ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB w/ Mongoose']`,
-      styleRules: [
-        { start: 0, end: 14, className: 'text' }, // nacho.skillSet
-        { start: 15, end: 16, className: 'equal' }, // =
-        { start: 17, end: 18, className: 'bracket' }, // [
-        { start: 18, end: 30, className: 'string' }, // 'JavaScript'
-        { start: 30, end: 31, className: 'comma' }, // ,
-        { start: 32, end: 39, className: 'string' }, // 'React'
-        { start: 39, end: 40, className: 'comma' }, // ,
-        { start: 41, end: 50, className: 'string' }, // 'Node.js'
-        { start: 50, end: 51, className: 'comma' }, // ,
-        { start: 51, end: 61, className: 'string' }, // 'Express'
-        { start: 61, end: 62, className: 'comma' }, // ,
-        { start: 62, end: 84, className: 'string' }, // 'MongoDB w/ Mongoose'
-        { start: 84, end: 85, className: 'bracket' } // ]
-      ]
+      text: `<span class="text" style="margin-bottom: 20px;">nacho.skillSet<span class="equal"> = </span><span class="bracket">[</span><span class="string">'JavaScript'<span class="comma">, </span>'React'<span class="comma">, </span>'Node.js'<span class="comma">, </span>'Express'<span class="comma">, </span>'MongoDB w/ Mongoose'</span><span class="bracket">]</span></span>`,
     },
     {
-      text: `nacho.interests = ['composition', 'digital signal processing', 'tennis']`,
-      styleRules: [
-        { start: 0, end: 15, className: 'text' }, // nacho.interests
-        { start: 16, end: 17, className: 'equal' }, // =
-        { start: 18, end: 19, className: 'bracket' }, // [
-        { start: 19, end: 32, className: 'string' }, // 'composition'
-        { start: 32, end: 33, className: 'comma' }, // ,
-        { start: 33, end: 61, className: 'string' }, // 'digital signal processing'
-        { start: 61, end: 62, className: 'comma' }, // ,
-        { start: 63, end: 71, className: 'string' }, // 'tennis'
-        { start: 71, end: 72, className: 'bracket' } // ]
-      ]
+      text: `<span class="text" style="margin-bottom: 20px;">nacho.interests<span class="equal"> = </span><span class="bracket">[</span><span class="string">'composition'<span class="comma">, </span>'digital signal processing'<span class="comma">, </span>'tennis'</span><span class="bracket">]</span></span>`,
     },
     {
-      text: "‎",
-      styleRules: []
+      text: `<span style="margin-bottom: 20px;">‎</span>`,
     },
     {
-      text: "// I'd love to work with you! Check out my CV here:",
-      styleRules: [{ start: 0, end: 51, className: 'comment' }]
+      text: `<span class="comment" style="margin-bottom: 20px;">// I'd love to work with you! Check out my CV here:</span>`,
     },
     {
-      text: `nacho.CV = './assets/docs/NachoBaezCV.pdf'`,
-      styleRules: [
-        { start: 0, end: 8, className: 'text' }, // nacho.CV
-        { start: 9, end: 10, className: 'equal' }, // =
-        { start: 11, end: 42, className: 'string' } // './assets/docs/NachoBaezCV.pdf'
-      ]
-    }
+      text: `<span class="text">nacho.CV<span class="equal"> = </span><span class="string">'./assets/docs/NachoBaezCV.pdf'</span></span>`,
+    },
   ];
 
   const [currentParagraph, setCurrentParagraph] = useState(-1);
@@ -120,10 +75,9 @@ const ParagraphSequence = () => {
             {index <= currentParagraph && (
               <Typewriter
                 text={paragraph.text}
-                speed={40}
+                speed={35}
                 showBlinkingBlock={index === currentParagraph}
                 onComplete={index === currentParagraph ? handleComplete : null}
-                styleRules={paragraph.styleRules}
               />
             )}
           </div>
