@@ -10,7 +10,7 @@ const Projects = () => {
     {
       barTitle: 'Game',
       title: 'Project V',
-      description: 'Ball Game is a local multiplayer, voleyball inspired game developed with the Phaser engine. It has fast paced gameplay, and a set of powerups to spice things up!', // WIP online multiplayer
+      description: 'Ball Game is a local multiplayer, volleyball inspired game developed with the Phaser engine. It has fast paced gameplay, and a set of powerups to spice things up!', // WIP online multiplayer
       imageUrl: './clip1920x1280.gif'
     },
     {
