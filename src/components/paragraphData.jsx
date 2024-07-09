@@ -12,9 +12,9 @@ const paragraphData = (
         <span className="equal"> = </span>
         <span className="bracket">[</span>
         <span className="string">
-          'nachobaez96@gmail.com'
+        <a href="mailto:nachobaez96@gmail.com" className="link">'nachobaez96@gmail.com'</a>
           <span className="comma">, </span>
-          'github/nachobaez96'
+          <a href="https://github.com/nachobaez96" target="_blank" rel="noopener noreferrer" className="link">'github/nachobaez96'</a>
         </span>
         <span className="bracket">]</span>
       </span>
@@ -58,7 +58,7 @@ const paragraphData = (
       <span className="text" style={{ marginBottom: '20px' }}>
         nacho.CV
         <span className="equal"> = </span>
-        <span className="string">'./assets/docs/NachoBaezCV.pdf'</span>
+        <span className="string"><a href="./assets/docs/NachoBaezCV.pdf" target="_blank" rel="noopener noreferrer" className="link">'./assets/docs/NachoBaezCV.pdf'</a></span>
       </span>
     </>
   );

@@ -10,6 +10,10 @@ body {
   line-height: 1.6;
 }
 
+.link {
+  color: #7a82c2;
+}
+
 .navbar {
   background-color: transparent;
   font-size: 10px;
