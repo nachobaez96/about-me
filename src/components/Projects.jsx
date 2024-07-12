@@ -33,7 +33,7 @@ const Projects = () => {
     {
       barTitle: 'Web App',
       title: 'My Showcase Site',
-      description: "The webpage you're witnessing right now. A simple but hopefully visually pleasing display of my React capabilities so far - it also has a back end! (mentira)", // responsive
+      description: "The webpage you're witnessing right now. A simple but responsive and hopefully visually pleasing display of my React capabilities so far.", // responsive
       imageUrl: './portfolio.gif'
     },
     {

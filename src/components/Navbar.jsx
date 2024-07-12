@@ -13,6 +13,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul>
+      <li className='wave-hover-stay'>
+          <a href="./assets/docs/NachoBaezCV.pdf" target="_blank" rel="noopener noreferrer">
+            CV
+          </a>
+        </li>
         <li className='wave-hover-stay'>
           <a href="#projects" onClick={(event) => handleScroll(event, 'projects')}>
             Projects

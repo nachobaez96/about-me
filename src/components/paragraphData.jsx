@@ -55,11 +55,11 @@ const paragraphData = (
       <div className="comment" style={{ marginBottom: '20px' }}>
         // I'd love to work with you! Check out my CV here:
       </div>
-      <span className="text" style={{ marginBottom: '20px' }}>
+      <div className="text" style={{ marginBottom: '20px' }}>
         nacho.CV
         <span className="equal"> = </span>
         <span className="string"><a href="./assets/docs/NachoBaezCV.pdf" target="_blank" rel="noopener noreferrer" className="link">'./assets/docs/NachoBaezCV.pdf'</a></span>
-      </span>
+      </div>
     </>
   );
   
