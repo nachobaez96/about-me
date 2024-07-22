@@ -8,6 +8,12 @@ import './styles.css';
 const Projects = () => {
   const projectData = [
     {
+      barTitle: 'Scraper/Sports Search',
+      title: 'DeportesWeb Search',
+      description: 'Search service for deportesweb.madrid.es, built out of necessity. It scrapes the available tennis/padel/pickleball... courts for your desired date and time slot, and presents the results on a map. Find your nearest available courts easily instead of navigating endless menus.',
+      imageUrl: './dweb.gif'
+    },
+    {
       barTitle: 'Game',
       title: 'Project V',
       description: 'Ball Game is a local multiplayer, volleyball inspired game developed with the Phaser engine. It has fast paced gameplay, and a set of powerups to spice things up!', // WIP online multiplayer
